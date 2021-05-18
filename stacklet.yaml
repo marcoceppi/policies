@@ -1,0 +1,11 @@
+collections:
+  - name: "test"
+    schedule: "rate(10 minutes)"
+    accounts:
+      - 456023024783
+    regions:
+      - us-east-2
+    policies:
+      - tims-demo-security-group
+      - tims-demo-s3
+      - demo-skipped

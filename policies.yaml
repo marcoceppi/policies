@@ -1,0 +1,16 @@
+policies:
+  - name: tims-demo-security-group
+    resource: aws.security-group
+
+  - name: tims-demo-ec2
+    resource: aws.ec2
+
+  - name: tims-demo-s3
+    resource: aws.s3
+
+  - name: demo-skipped
+    resource: ec2
+    mode:
+      type: cloudtrail
+      events:
+       - RunInstances
